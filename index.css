@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(bg-stars.svg);
+    background-color:rgb(48, 25, 52);
+
+}
+.launch{
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 700;
+}
+.numbers{
+    display: flex;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    justify-content: center;
+    gap: 3rem;
+    margin: auto;
+    margin-top: 5.5rem;
+    /* margin: 5.5rem 30rem; */
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 700;
+}
+.Days{
+    width: 6.5rem;
+    color: hsl(345, 95%, 68%);
+    border-radius: 50px;
+    margin-left: 15px;
+}
+h2{
+    padding-left: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: hsl(237, 18%, 59%);
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-top: 0.7rem;
+    font-family: "Red Hat Text", sans-serif;
+    font-weight: 700;
+}
+
+#number-1, #number-2, #number-3, #number-4{
+    text-align: center;
+    font-size: 55px;
+    background-color: hsl(236, 21%, 26%);
+    padding-top: 18px;
+    width: 7rem;
+    height: 3.6rem;
+    border-radius: 7px;
+    box-shadow: 1.5px 1.5px 1.5px 1.5px black;
+}
+.noDate{
+    /* background-color: hsl(235, 16%, 14%); */
+    background-color: hsl(236, 21%, 26%);
+    width: 7rem;
+    height: 3.4rem;
+    border-radius: 7px;
+    box-shadow: 2.2px 2.2px 2.2px 2.2px black;
+}
+
+
+.stars{
+    position: absolute;
+} 
+.hills{
+    position: absolute;
+    bottom: 0;
+}
+.icon{
+    position: absolute;
+    bottom: 30px; 
+    z-index: 999; 
+    left: 43rem; 
+} 
+
+.icon ul{
+    list-style: none;
+    display: flex;
+}
+.icon li{
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 375px) {
+    .launch{
+        max-width: auto;
+        padding: 0 20px;
+    }
+    .numbers h1{
+        text-align: center;
+    }
+} 
+
+@media screen and (min-width: 1440px){
+    .hills img{
+    width: 1600px;
+    }
+}
